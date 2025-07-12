@@ -16,7 +16,7 @@ This project explores the field of **Text-to-SQL translation**, bridging human-f
 - 🗃️ **SQL Query Generation**: Automatically generates corresponding SQL.
 - 📊 **Schema Awareness**: Handles complex DB schema involving multiple tables and joins.
 - 🧠 **Pretrained Language Models**: Utilizes models like **T5** or **BERT** for semantic mapping.
-- ⚙️ **Custom Fine-Tuning**: Trained on benchmarks like Spider/WikiSQL.
+- ⚙️ **Custom Traning**: Trained on benchmarks like Spider/WikiSQL.
 - 🔍 **Interactive Notebook**: A Jupyter notebook workflow for experimentation and testing.
 
 
@@ -64,21 +64,21 @@ unsloth
 
 ## 🧠 Model Details
 
-| Component       | Description                                    |
+| Component      | Description                                    |
 |----------------|------------------------------------------------|
 | Language Model | T5-base / BART / GPT-style encoder-decoder     |
 | Input Format   | NL question + DB schema context                |
-| Output Format  | Valid SQL query                                 |
-| Dataset        | Spider / WikiSQL                                |
+| Output Format  | Valid SQL query                                |
+| Dataset        | Spider / WikiSQL                               |
 
 ---
 
 ## 📓 Notebook Highlights (`Text_to_sql.ipynb`)
 
-| Section                     | Purpose                                                                 |
+| Section                    | Purpose                                                                 |
 |----------------------------|-------------------------------------------------------------------------|
 | Data Loading               | Prepares and tokenizes natural language & SQL pairs                     |
-| Model Loading/Fine-tuning  | Loads pretrained T5 and fine-tunes it on the dataset                    |
+| Model Loading/traning      | Loads pretrained T5 and trains it on the dataset                        |
 | Evaluation Metrics         | Measures accuracy, exact match, and execution match                     |
 | Inference Cell             | Allows real-time testing of your own NL questions                       |
 
@@ -133,7 +133,7 @@ jupyter notebook Text_to_sql.ipynb
 
 Follow the cell execution in order:
 1. Load & preprocess data
-2. Load/fine-tune model
+2. Load/train model
 3. Run inference
 
 ---
@@ -143,7 +143,7 @@ Follow the cell execution in order:
 - Preprocess your schema in a **linearized format**:  
   *"Table: employees, Columns: id, name, hire_date"*
 
-- Use `transformers.Trainer` for easy fine-tuning
+- Use `transformers.Trainer` for easy training
 
 - For production, wrap inference in a simple Flask API
 
