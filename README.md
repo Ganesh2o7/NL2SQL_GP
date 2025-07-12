@@ -39,8 +39,7 @@ This project explores the field of **Text-to-SQL translation**, bridging human-f
 ### 1. Clone Repository
 
 ```bash
-git clone https://github.com/yourusername/nl2sql-project.git
-cd nl2sql-project
+git clone https://github.com/Ganesh2o7/NL2SQL_GP
 ```
 
 ### 2. Install Dependencies
@@ -74,7 +73,7 @@ unsloth
 
 ---
 
-## 📓 Notebook Highlights (`Text_to_sql_(1).ipynb`)
+## 📓 Notebook Highlights (`Text_to_sql.ipynb`)
 
 | Section                     | Purpose                                                                 |
 |----------------------------|-------------------------------------------------------------------------|
@@ -129,7 +128,7 @@ SQL: SELECT name FROM departments WHERE (SELECT COUNT(*) FROM employees WHERE em
 Launch Jupyter and open:
 
 ```bash
-jupyter notebook Text_to_sql_(1).ipynb
+jupyter notebook Text_to_sql.ipynb
 ```
 
 Follow the cell execution in order:
@@ -160,5 +159,4 @@ Follow the cell execution in order:
 
 ## 📃 License
 
-This project is for academic and research purposes.  
-Feel free to modify and extend it for your own experiments.
+This project is for academic and research purposes only.  
